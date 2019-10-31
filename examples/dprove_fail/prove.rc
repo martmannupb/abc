@@ -1,0 +1,3 @@
+read_blif sqcc_seq_valid.blif;
+strash;
+dprove -vw -D 50000 -T 25200 -F 5 -A 40;
