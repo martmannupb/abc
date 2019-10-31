@@ -117,6 +117,7 @@ void Abc_FrameInit( Abc_Frame_t * pAbc )
     Pla_Init( pAbc );
     Test_Init( pAbc );
     Glucose_Init( pAbc );
+    Circa_Init( pAbc );
     for( p = s_InitializerStart ; p ; p = p->next )
         if(p->init)
             p->init(pAbc);
@@ -156,6 +157,7 @@ void Abc_FrameEnd( Abc_Frame_t * pAbc )
     Pla_End( pAbc );
     Test_End( pAbc );
     Glucose_End( pAbc );
+    Circa_End( pAbc );
 }
 
 

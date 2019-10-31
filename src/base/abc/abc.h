@@ -589,6 +589,7 @@ extern ABC_DLL char *             Abc_NodeConvertSopToMvSop( int nVars, Vec_Int_
 extern ABC_DLL int                Abc_NodeEvalMvCost( int nVars, Vec_Int_t * vSop0, Vec_Int_t * vSop1 );
 /*=== abcBalance.c ==========================================================*/
 extern ABC_DLL Abc_Ntk_t *        Abc_NtkBalance( Abc_Ntk_t * pNtk, int  fDuplicate, int  fSelective, int  fUpdateLevel );
+extern ABC_DLL void               Abc_NtkMarkCriticalNodes( Abc_Ntk_t * pNtk );  // Added by Linus Witschen (CIRCA)
 /*=== abcCheck.c ==========================================================*/
 extern ABC_DLL int                Abc_NtkCheck( Abc_Ntk_t * pNtk );
 extern ABC_DLL int                Abc_NtkCheckRead( Abc_Ntk_t * pNtk );

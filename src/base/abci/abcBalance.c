@@ -31,7 +31,7 @@ static void        Abc_NtkBalancePerform( Abc_Ntk_t * pNtk, Abc_Ntk_t * pNtkAig,
 static Abc_Obj_t * Abc_NodeBalance_rec( Abc_Ntk_t * pNtkNew, Abc_Obj_t * pNode, Vec_Vec_t * vStorage, int Level, int fDuplicate, int fSelective, int fUpdateLevel );
 static Vec_Ptr_t * Abc_NodeBalanceCone( Abc_Obj_t * pNode, Vec_Vec_t * vSuper, int Level, int fDuplicate, int fSelective );
 static int         Abc_NodeBalanceCone_rec( Abc_Obj_t * pNode, Vec_Ptr_t * vSuper, int fFirst, int fDuplicate, int fSelective );
-static void        Abc_NtkMarkCriticalNodes( Abc_Ntk_t * pNtk );
+// static void        Abc_NtkMarkCriticalNodes( Abc_Ntk_t * pNtk );     // Put in comment for CIRCA
 static Vec_Ptr_t * Abc_NodeBalanceConeExor( Abc_Obj_t * pNode );
 
 
